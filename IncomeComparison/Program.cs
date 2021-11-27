@@ -28,10 +28,10 @@ namespace IncomeComparison
             Console.WriteLine("\n~~< Person 1 >~~");
             // Request user for hourly rate
             Console.WriteLine("Hourly Rate?");
-            p1._Rate = int.Parse(Console.ReadLine());
+            float.TryParse(Console.ReadLine(), out p1._Rate);
             // Request user for hours worked in a week
             Console.WriteLine("Hours worked per week?");
-            p1._Wk_Hr = int.Parse(Console.ReadLine());
+            float.TryParse(Console.ReadLine(), out p1._Wk_Hr);
 
 
             // ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -40,10 +40,10 @@ namespace IncomeComparison
             Console.WriteLine("\n~~< Person 2 >~~");
             // Request user for hourly rate
             Console.WriteLine("Hourly Rate?");
-            p2._Rate = int.Parse(Console.ReadLine());
+            float.TryParse(Console.ReadLine(), out p2._Rate);
             // Request user for hours worked in a week
             Console.WriteLine("Hours worked per week?");
-            p2._Wk_Hr = int.Parse(Console.ReadLine());
+            float.TryParse(Console.ReadLine(), out p2._Wk_Hr);
 
 
             Console.WriteLine("\n|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|\n");
@@ -51,8 +51,8 @@ namespace IncomeComparison
             // Calculate annual gross income
             // ~~~~~~~~~~~~~~~~~~~~~~~~~
             // Ease of reading variables
-            float p1_A = p1.Annual;
-            float p2_A = p2.Annual;
+            float p1_A = p1.Annual(true);
+            float p2_A = p2.Annual(false);
             // Calculate deferance
             float annualDif = (p1_A > p2_A) ? p1_A - p2_A : p2_A - p1_A;
 
@@ -80,19 +80,23 @@ namespace IncomeComparison
     class Person
     {
         // The rate of pay
-        public int _Rate;
+        public float _Rate;
         // The weekly hours worked
-        public int _Wk_Hr;
-        // Used to calculate the number of pay days
-        private static bool hasHolidays = true;
-        // Number of work days in a year
-        private int annualWorkDays = hasHolidays ? 235 : 260;
-        // Return the annual salary
-        public float Annual => (_Rate * _Wk_Hr) * (annualWorkDays);
-        // Constructor with default parameter
-        public Person(bool includeHolidays = true)
-        {
-            hasHolidays = includeHolidays;
-        }
+        public float _Wk_Hr;
+
+        /// <summary>
+        /// A basic class that holds the data for calculating annual rates.
+        /// </summary>
+        public Person(){}
+
+
+        /// <summary>
+        /// Return the annual salary.
+        /// <para>
+        /// <paramref name="hasHolidays"/>
+        /// Used to calculate the number of pay days
+        /// </para>
+        /// </summary>
+        public float Annual(bool hasHolidays) => (_Rate * _Wk_Hr) * (hasHolidays ? 47 : 52);
     }
 }

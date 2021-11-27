@@ -4,3 +4,4 @@ E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\Inc
 E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\IncomeComparison\bin\Debug\IncomeComparison.pdb
 E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\IncomeComparison\obj\Debug\IncomeComparison.exe
 E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\IncomeComparison\obj\Debug\IncomeComparison.pdb
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\IncomeComparison\obj\Debug\IncomeComparison.csproj.AssemblyReference.cache
