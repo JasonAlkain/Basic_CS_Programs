@@ -1,0 +1,7 @@
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\WhileLooper\bin\Debug\WhileLooper.exe.config
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\WhileLooper\bin\Debug\WhileLooper.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\WhileLooper\bin\Debug\WhileLooper.pdb
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\WhileLooper\obj\Debug\WhileLooper.csproj.AssemblyReference.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\WhileLooper\obj\Debug\WhileLooper.csproj.CoreCompileInputs.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\WhileLooper\obj\Debug\WhileLooper.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\WhileLooper\obj\Debug\WhileLooper.pdb
