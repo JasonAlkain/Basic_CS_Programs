@@ -37,7 +37,6 @@ namespace WhileLooper
         {
             int num = new Random().Next(1, 101);
             bool isGuessed = false;
-
             do
             {
                 // increament the number of atempts
@@ -73,6 +72,17 @@ namespace WhileLooper
                         WriteLine($"{border_S}");
                         WriteLine($"\n\n{border}");
                         // A kind of pause break before moving on.
+                        while(atempts > 0)
+                        {
+                            ReadKey();
+                            Clear();
+                            WriteLine($"{border}");
+                            WriteLine($"\tI'm sorry Dave,\n");
+                            WriteLine($"\tbut I cann't let you do that...");
+                            WriteLine($"{border}");
+                            atempts--;
+                        }
+                        Clear();
                         isGuessed = true;
                     }
                     else if (userIn > num) // Too high of a guess
@@ -101,7 +111,7 @@ namespace WhileLooper
             }
             while (!isGuessed);
 
-            Write($"{border}\n\n\tThank you for playing!\n\n{border}");
+            Write($"{border}\n\n\tThank you for playing Dave!\n\n{border}");
             ReadKey();
         }
     }
