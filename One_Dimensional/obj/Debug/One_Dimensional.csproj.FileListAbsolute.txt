@@ -1,0 +1,7 @@
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\One_Dimensional\bin\Debug\One_Dimensional.exe.config
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\One_Dimensional\bin\Debug\One_Dimensional.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\One_Dimensional\bin\Debug\One_Dimensional.pdb
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\One_Dimensional\obj\Debug\One_Dimensional.csproj.AssemblyReference.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\One_Dimensional\obj\Debug\One_Dimensional.csproj.CoreCompileInputs.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\One_Dimensional\obj\Debug\One_Dimensional.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\One_Dimensional\obj\Debug\One_Dimensional.pdb
