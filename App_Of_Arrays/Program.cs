@@ -65,7 +65,7 @@ namespace App_Of_Arrays
                 "\t\"May the Force be with you.\" \n\t- Star Wars"
             };
 
-
+            //Display Header
             WriteLine($"{border}");
             WriteLine($"  {border_S}");
             WriteLine("     String Array Function");
@@ -100,6 +100,7 @@ namespace App_Of_Arrays
             int[] beta_ary = { 0, 1, 22, 333, 4444, 55555, 666666 };
 
 
+            //Display Header
             WriteLine($"{border}");
             WriteLine($"  {border_S}");
             WriteLine("     Integer Array Function");
@@ -121,7 +122,7 @@ namespace App_Of_Arrays
             {
                 WriteLine("Out of index");
                 BottomBorder();
-                StringAryFunc();
+                IntAryFunc();
             }
         }
 
@@ -144,6 +145,7 @@ namespace App_Of_Arrays
 
 
 
+            //Display Header
             WriteLine($"{border}");
             WriteLine($"  {border_S}");
             WriteLine("     String List Function");
@@ -164,7 +166,7 @@ namespace App_Of_Arrays
             {
                 WriteLine("Out of index");
                 BottomBorder();
-                StringAryFunc();
+                StringListFunc();
             }
 
         }
