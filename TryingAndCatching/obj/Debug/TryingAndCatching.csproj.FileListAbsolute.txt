@@ -1,0 +1,7 @@
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\TryingAndCatching\bin\Debug\TryingAndCatching.exe.config
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\TryingAndCatching\bin\Debug\TryingAndCatching.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\TryingAndCatching\bin\Debug\TryingAndCatching.pdb
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\TryingAndCatching\obj\Debug\TryingAndCatching.csproj.AssemblyReference.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\TryingAndCatching\obj\Debug\TryingAndCatching.csproj.CoreCompileInputs.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\TryingAndCatching\obj\Debug\TryingAndCatching.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\TryingAndCatching\obj\Debug\TryingAndCatching.pdb
