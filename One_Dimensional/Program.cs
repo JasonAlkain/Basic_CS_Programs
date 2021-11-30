@@ -58,39 +58,26 @@ namespace One_Dimensional
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         static void PartSix()
         {
-            // Create the list
-            List<string> searcher = new List<string>();
+            // Create the list to search
+            List<string> searcher = new List<string>() {
+                "1977", "1939", "1997", "1989", "1939",
+                "1931", "1984", "1997", "1989", "1931",
+                "1984", "1997", "1989", "1931", "1984"
+            };
+            
+            // The list of items found from the list to search
             List<string> found = new List<string>();
 
 
-            // Create the list (not efficient but works)
-            searcher.Add("Star Wars, 1977");
-            searcher.Add("The Wizard of Oz, 1939");
-            searcher.Add("Titanic, 1997");
-            searcher.Add("Dead Poets Society, 1989");
-            searcher.Add("The Adventures of Sherlock Holmes, 1939");
-            searcher.Add("Frankenstein, 1931");
-            searcher.Add("The Terminator, 1984");
-            searcher.Add("Donnie Brasco, 1997");
-            searcher.Add("Look Who's Talking, 1989");
-            searcher.Add("Back to the Future Part II, 1989");
-
-
-
-            //Prompt the user
-            WriteLine($"Enter a movie date: [1977|1939|1939|1984|1997|1931|1989]");
-            Write(">>: ");
-            // get user input
-            userIn = ReadLine();
             // Loop through the list for matching items
-            searcher.ForEach(item =>
+            for (int i = 0; i < searcher.Count; i++)
             {
-                if (item.Contains(userIn))
+                if (searcher[i].Contains("1989"))
                 {
                     // Add Items found to the found list
-                    found.Add($"Index {searcher.IndexOf(item)}");
+                    found.Add($"Indexed at: {i}");
                 }
-            });
+            }
 
             if (found.Count > 0)
                 found.ForEach(item => WriteLine(item));
