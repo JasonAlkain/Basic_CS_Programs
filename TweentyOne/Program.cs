@@ -22,50 +22,13 @@ namespace TweentyOne
         {
             int rndNum = new Random().Next(5, 10);
             Deck deck = new Deck();
-            deck = Shuffle(deck, out int shuffledTimes, rndNum);
+            deck.Shuffle(rndNum, out int t_shfld);
 
             deck.Cards.ForEach(card => WriteLine($"{card.Face} \t| {card.Suit}"));
 
-            WriteLine($"\n\t Times I shuffled: {shuffledTimes}");
+            WriteLine($"\n\t Times I shuffled: {t_shfld}");
 
             ReadKey();
-        }
-
-
-        public static Deck Shuffle(Deck deck, out int timesShuffled, int times)
-        {
-            timesShuffled = 0;
-            for (int i = 0; i < times; i++)
-            {
-                deck = Shuffle(deck);
-                timesShuffled++;
-            }
-            return deck;
-        }
-
-
-        public static Deck Shuffle(Deck deck, int times)
-        {
-            for (int i = 0; i < times; i++)
-                deck = Shuffle(deck);
-
-            return deck;
-        }
-
-        public static Deck Shuffle(Deck deck)
-        {
-            List<Card> tCards = new List<Card>();
-            Random rnd = new Random();
-
-            while (deck.Cards.Count > 0)
-            {
-                int rndInx = rnd.Next(0, deck.Cards.Count);
-                tCards.Add(deck.Cards[rndInx]);
-                deck.Cards.RemoveAt(rndInx);
-            }
-            deck.Cards = tCards;
-
-            return deck;
         }
 
     }

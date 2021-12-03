@@ -8,6 +8,10 @@ namespace TweentyOne
 {
     public class Deck
     {
+
+        public List<Card> Cards { get; set; }
+
+
         public Deck()
         {
             List<string> Suits = new List<string>()
@@ -32,6 +36,36 @@ namespace TweentyOne
                     Cards.Add(new Card(suit, face));
         }
 
-        public List<Card> Cards { get; set; }
+
+        public void Shuffle(int times, out int timesShuffled)
+        {
+            timesShuffled = 0;
+            for (int i = 0; i < times; i++)
+            {
+                Shuffle();
+                timesShuffled++;
+            }
+        }
+
+
+        public void Shuffle(int times)
+        {
+            for (int i = 0; i < times; i++)
+                Shuffle();
+        }
+
+        public void Shuffle()
+        {
+            List<Card> tCards = new List<Card>();
+            Random rnd = new Random();
+
+            while (this.Cards.Count > 0)
+            {
+                int rndInx = rnd.Next(0, this.Cards.Count);
+                tCards.Add(this.Cards[rndInx]);
+                this.Cards.RemoveAt(rndInx);
+            }
+            this.Cards = tCards;
+        }
     }
 }
