@@ -33,7 +33,8 @@ namespace OverridersMethods_V2
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         static void Main(string[] args)
         {
-            MultipleParameters(ovrdrs);
+            //MultipleParameters(ovrdrs);
+            MultipleParameters_V2(ovrdrs);
 
             ReadKey();     
         }
@@ -107,6 +108,15 @@ namespace OverridersMethods_V2
             WriteLine("I just got word this will be fixed in post.");
             Write("Press enter to continue...");
 
+        }
+
+        static void MultipleParameters_V2(Ovrdrs od)
+        {
+            WriteLine(border);
+            ovrdrs.DisplaySecond(5, 15);
+            WriteLine(border);
+            ovrdrs.DisplaySecond(b: 5, a: 15);
+            WriteLine(border);
         }
 
         static int GetNumber(int minNum = 1)

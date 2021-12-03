@@ -21,5 +21,15 @@ namespace OverridersMethods_V2
         /// <returns></returns>
         public int MathThings(int a, int b = 2) => a % b;
 
+        public void DisplaySecond(int a, int b)
+        {
+            double _A = Math.Sin(a);
+
+            Console.WriteLine($"a = {a}");
+            Console.WriteLine($"b = {b}");
+            Console.WriteLine($"Math.Sin({a}) = {_A}");
+            Console.WriteLine($"{b} * Math.Sin({a}) = {b * _A}");
+        }
+
     }
 }
