@@ -31,5 +31,7 @@ namespace OverridersMethods_V2
             Console.WriteLine($"{b} * Math.Sin({a}) = {b * _A}");
         }
 
+        public void DividerByTwo(int a, out int b) => b = a / 2;
+
     }
 }

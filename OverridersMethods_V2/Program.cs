@@ -34,7 +34,8 @@ namespace OverridersMethods_V2
         static void Main(string[] args)
         {
             //MultipleParameters(ovrdrs);
-            MultipleParameters_V2(ovrdrs);
+            //MultipleParameters_V2(ovrdrs);
+            OutputParameters(ovrdrs);
 
             ReadKey();     
         }
@@ -113,10 +114,19 @@ namespace OverridersMethods_V2
         static void MultipleParameters_V2(Ovrdrs od)
         {
             WriteLine(border);
-            ovrdrs.DisplaySecond(5, 15);
+            od.DisplaySecond(5, 15);
             WriteLine(border);
-            ovrdrs.DisplaySecond(b: 5, a: 15);
+            od.DisplaySecond(b: 5, a: 15);
             WriteLine(border);
+        }
+        static void OutputParameters(Ovrdrs od)
+        {
+            // Get user input and 
+            GetNumber(10, out int userIn);
+            // Use the method...
+            od.DividerByTwo(userIn, out int res);
+            // Print results
+            WriteLine($"{userIn} / 2 = {res}");
         }
 
         static int GetNumber(int minNum = 1)
@@ -144,6 +154,16 @@ namespace OverridersMethods_V2
             finally { }
             return result;
         }
+        static void GetNumber(int minNum, out int result)
+        {
+            result = 0;
+            WriteLine($"Enter any whole number between {minNum} and 100.");
+            Write(">>: ");
+            // Get user input
+            int.TryParse(ReadLine(), out int res);
+            result = res;
+        }
+
 
         static void loadingWheel(string ending = "|")
         {
