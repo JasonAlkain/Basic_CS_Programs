@@ -6,22 +6,49 @@ using System.Threading.Tasks;
 
 namespace OverrideMethods
 {
+    /// <summary>
+    /// A series of override methods with a random number
+    /// </summary>
     public class Overriders
     {
-        public int rndNum = new Random().Next(1, 21);
+        public int rndNum { get; }
 
-        public Overriders() { }
 
-        public int Responder(int UserIn)
-        {
-            return rndNum * UserIn;
-        }
+        /// <summary>
+        /// Generates a new random number with definable min and max fields when instatiated.
+        /// </summary>
+        /// <param name="_Min">The minimum number for the generator. (Default: 7)</param>
+        /// <param name="_Max">The maximum number for the generator. (Default: 21)</param>
+        public Overriders(int _Min = 7, int _Max = 21) => rndNum = new Random().Next(_Min, _Max);
 
-        public int Responder(decimal UserIn)
-        {
-            return (int)Math.Round(rndNum / UserIn);
-        }
 
+        /// <summary>
+        /// Multiplies the random by the parameter
+        /// </summary>
+        /// <param name="UserIn">
+        /// Parameter passed in for the math equation
+        /// </param>
+        /// <returns></returns>
+        public int Responder(int UserIn) => rndNum * UserIn;
+        
+        
+        /// <summary>
+        /// Divides the random by the parameter
+        /// </summary>
+        /// <param name="UserIn">
+        /// Parameter passed in for the math equation
+        /// </param>
+        /// <returns></returns>
+        public int Responder(decimal UserIn) => (int)Math.Round(rndNum / UserIn);
+        
+        
+        /// <summary>
+        /// Adds the random by the parameter
+        /// </summary>
+        /// <param name="UserIn">
+        /// Parameter passed in for the math equation
+        /// </param>
+        /// <returns></returns>
         public int Responder(string UserIn)
         {
             int result = 0;
