@@ -33,12 +33,12 @@ namespace OverridersMethods_V2
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         static void Main(string[] args)
         {
-            StepOne(ovrdrs);
+            MultipleParameters(ovrdrs);
 
             ReadKey();     
         }
 
-        static void StepOne(Ovrdrs od)
+        static void MultipleParameters(Ovrdrs od)
         {
 
             WriteLine($"{border}");
