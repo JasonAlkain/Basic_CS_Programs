@@ -22,11 +22,19 @@ namespace TweentyOne
         {
             int rndNum = new Random().Next(5, 10);
             Deck deck = new Deck();
-            deck.Shuffle(rndNum, out int t_shfld);
 
-            deck.Cards.ForEach(card => WriteLine($"{card.Face} \t| {card.Suit}"));
+            TwentyOneGame game = new TwentyOneGame();
+            game.Players = new List<string>() { "Zach", "Paul", "Dillan", "Jude"};
 
-            WriteLine($"\n\t Times I shuffled: {t_shfld}");
+            game.ListPlayers();
+            
+
+
+            //deck.Shuffle(rndNum, out int t_shfld);
+
+            //deck.Cards.ForEach(card => WriteLine($"{card.Face} \t| {card.Suit}"));
+
+            //WriteLine($"\n\t Times I shuffled: {t_shfld}");
 
             ReadKey();
         }
