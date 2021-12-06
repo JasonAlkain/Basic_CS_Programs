@@ -8,6 +8,7 @@ namespace ClassOfAbstraction
 {
     public class Employee : Person
     {
+        // Override from Person to say name.
         public override void SayName() => Console.Write($"{FirstName} {LastName}");
     }
 }
