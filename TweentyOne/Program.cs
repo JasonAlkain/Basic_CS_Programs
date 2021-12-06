@@ -9,7 +9,7 @@ namespace TweentyOne
     class Program
     {
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // Fun lambda experiments to reduce some code
+        // Simplifiers for Console 'I/O'
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         static string ReadLine() => Console.ReadLine();
         static ConsoleKeyInfo ReadKey() => Console.ReadKey();
