@@ -17,7 +17,9 @@ namespace TweentyOne
         static void Write(string s) => Console.Write(s);
         static void Clear() => Console.Clear();
 
-
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // Methods
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         static void Main(string[] args)
         {
             int rndNum = new Random().Next(5, 10);
