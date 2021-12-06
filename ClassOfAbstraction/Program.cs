@@ -22,6 +22,15 @@ namespace ClassOfAbstraction
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         static void Main(string[] args)
         {
+            Employee em_1 = new Employee()
+            {
+                FirstName = "Sample",
+                LastName = "Student"
+            };
+
+            em_1.SayName();
+
+            ReadKey();
         }
     }
 }

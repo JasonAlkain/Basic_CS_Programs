@@ -1,0 +1,6 @@
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\ClassOfAbstraction\bin\Debug\ClassOfAbstraction.exe.config
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\ClassOfAbstraction\bin\Debug\ClassOfAbstraction.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\ClassOfAbstraction\bin\Debug\ClassOfAbstraction.pdb
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\ClassOfAbstraction\obj\Debug\ClassOfAbstraction.csproj.CoreCompileInputs.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\ClassOfAbstraction\obj\Debug\ClassOfAbstraction.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\ClassOfAbstraction\obj\Debug\ClassOfAbstraction.pdb
