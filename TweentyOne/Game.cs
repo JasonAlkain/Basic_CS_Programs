@@ -6,14 +6,23 @@ using System.Threading.Tasks;
 
 namespace TweentyOne
 {
-    public class Game
+    public abstract class Game
     {
-        public List<string> Players { get; set; }
-        public string Name { get; set; }
-        public string Dealer { get; set; }
-        public void ListPlayers() =>
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // Variables
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        public string Title { get; set; }
+        public List<Player> Players { get; set; }
+        public Dealer Dealer { get; set; }
+
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // Methods
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        public abstract void Play();
+        public virtual void ListPlayers() =>
             Players.ForEach(player =>
-                Console.WriteLine($"Player #{Players.IndexOf(player)}: {player}")
+                Console.WriteLine($"Player #{Players.IndexOf(player)}: {player.Name}")
             );
 
     }

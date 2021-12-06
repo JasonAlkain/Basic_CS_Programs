@@ -23,18 +23,20 @@ namespace TweentyOne
             int rndNum = new Random().Next(5, 10);
             Deck deck = new Deck();
 
-            TwentyOneGame game = new TwentyOneGame();
-            game.Players = new List<string>() { "Zach", "Paul", "Dillan", "Jude"};
+            TwentyOneGame game = new TwentyOneGame
+            {
+                Title = "Twenty One",
+                Players = new List<Player>() {
+                    new Player() { Name = "Zach" },
+                    new Player() { Name = "Paul" },
+                    new Player() { Name = "Dillan" },
+                    new Player() { Name = "Jude" }
+                }
+            };
 
+            
             game.ListPlayers();
             
-
-
-            //deck.Shuffle(rndNum, out int t_shfld);
-
-            //deck.Cards.ForEach(card => WriteLine($"{card.Face} \t| {card.Suit}"));
-
-            //WriteLine($"\n\t Times I shuffled: {t_shfld}");
 
             ReadKey();
         }
