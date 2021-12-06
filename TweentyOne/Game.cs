@@ -11,7 +11,10 @@ namespace TweentyOne
         public List<string> Players { get; set; }
         public string Name { get; set; }
         public string Dealer { get; set; }
-        public void ListPlayers() => Players.ForEach(player => Console.WriteLine($"Player #{Players.IndexOf(player)}: {player}"));
+        public void ListPlayers() =>
+            Players.ForEach(player =>
+                Console.WriteLine($"Player #{Players.IndexOf(player)}: {player}")
+            );
 
     }
 }
