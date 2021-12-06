@@ -1,0 +1,7 @@
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\InterfacePolymorphism\bin\Debug\InterfacePolymorphism.exe.config
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\InterfacePolymorphism\bin\Debug\InterfacePolymorphism.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\InterfacePolymorphism\bin\Debug\InterfacePolymorphism.pdb
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\InterfacePolymorphism\obj\Debug\InterfacePolymorphism.csproj.AssemblyReference.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\InterfacePolymorphism\obj\Debug\InterfacePolymorphism.csproj.CoreCompileInputs.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\InterfacePolymorphism\obj\Debug\InterfacePolymorphism.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\InterfacePolymorphism\obj\Debug\InterfacePolymorphism.pdb
