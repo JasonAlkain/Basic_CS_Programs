@@ -32,9 +32,18 @@ namespace InterfacePolymorphism
             // Say Hello
             em_1.SayName();
 
+            // Object of the interface from the employee class
+            IQuittable quitter = new Employee();
 
             // Now quit
-            em_1.Quit();
+            quitter.Quit();
+
+
+            // Object of the interface from the employee object
+            IQuittable qtr_2 = em_1;
+
+            // This is the second version from an object
+            qtr_2.Quit();
 
             // Jobs done
             ReadKey();
