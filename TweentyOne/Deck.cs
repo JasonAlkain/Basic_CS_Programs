@@ -14,26 +14,18 @@ namespace TweentyOne
 
         public Deck()
         {
-            List<string> Suits = new List<string>()
-            {
-                "Clubs",
-                "Hearts",
-                "Diamonds",
-                "Spades"
-            };
-
-            List<string> Faces = new List<string>() 
-            {
-                "Two", "Three", "Four", "Five",
-                "Six","Seven","Eight","Nine","Ten",
-                "Jack","King","Queen", "Ace"
-            };
-
             Cards = new List<Card>();
 
-            foreach (string face in Faces)
-                foreach (string suit in Suits)
-                    Cards.Add(new Card(suit, face));
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 13; j++)
+                {
+                    Card card = new Card();
+                    card.Face = (Face)j;
+                    card.Suit = (Suit)i;
+                    Cards.Add(card);
+                }
+            }
         }
 
 

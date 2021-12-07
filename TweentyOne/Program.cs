@@ -13,7 +13,7 @@ namespace TweentyOne
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         static string ReadLine() => Console.ReadLine();
         static ConsoleKeyInfo ReadKey() => Console.ReadKey();
-        static void WriteLine(string s) => Console.WriteLine(s);
+        static void WriteLine(String s) => Console.WriteLine(s);
         static void Write(string s) => Console.Write(s);
         static void Clear() => Console.Clear();
 
@@ -22,11 +22,9 @@ namespace TweentyOne
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         static void Main(string[] args)
         {
-            int rndNum = new Random().Next(5, 10);
+
             Deck deck = new Deck();
-
             Player player = new Player() { Name = "Jason" };
-
             Game game = new TwentyOneGame
             {
                 Title = "Twenty One",
@@ -42,11 +40,8 @@ namespace TweentyOne
             game.ListPlayers();
 
             WriteLine("");
-            
-            game -= player;
-            game.ListPlayers();
 
-            
+            deck.Cards.ForEach(card => WriteLine($" {card.Face}\t| {card.Suit}"));
 
             ReadKey();
         }
