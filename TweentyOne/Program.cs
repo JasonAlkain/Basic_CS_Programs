@@ -25,19 +25,27 @@ namespace TweentyOne
             int rndNum = new Random().Next(5, 10);
             Deck deck = new Deck();
 
-            TwentyOneGame game = new TwentyOneGame
+            Player player = new Player() { Name = "Jason" };
+
+            Game game = new TwentyOneGame
             {
                 Title = "Twenty One",
                 Players = new List<Player>() {
                     new Player() { Name = "Zach" },
                     new Player() { Name = "Paul" },
-                    new Player() { Name = "Dillan" },
-                    new Player() { Name = "Jude" }
+                    new Player() { Name = "Jude" },
+                    new Player() { Name = "Dillan" }
                 }
             };
 
-            
+            game += player;
             game.ListPlayers();
+
+            WriteLine("");
+            
+            game -= player;
+            game.ListPlayers();
+
             
 
             ReadKey();

@@ -22,7 +22,7 @@ namespace TweentyOne
         public abstract void Play();
         public virtual void ListPlayers() =>
             Players.ForEach(player =>
-                Console.WriteLine($"Player #{Players.IndexOf(player)}: {player.Name}")
+                Console.WriteLine($"Player #{Players.IndexOf(player)+1}: {player.Name}")
             );
 
     }
