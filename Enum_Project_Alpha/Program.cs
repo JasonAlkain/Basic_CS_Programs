@@ -22,6 +22,33 @@ namespace Enum_Project_Alpha
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         static void Main(string[] args)
         {
+
+            WriteLine("What is the current day of the week?");
+            Write(">>: ");
+            string userIn = ReadLine();
+
+            try
+            {                
+                var res = Enum.Parse(typeof(EWeekDays), userIn);
+                WriteLine($"The current day of the week is: {res}");
+            }
+            catch (ArgumentNullException ex)
+            {
+                WriteLine("Argument Null Exception");
+                WriteLine(ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                WriteLine("Argument Exception");
+                WriteLine(ex.Message);
+            }
+            catch (OverflowException ex)
+            {
+                WriteLine("Overflow Exception");
+                WriteLine(ex.Message);
+            }
+
+            ReadKey();
         }
     }
 }

@@ -1,0 +1,7 @@
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\Enum_Project_Alpha\bin\Debug\Enum_Project_Alpha.exe.config
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\Enum_Project_Alpha\bin\Debug\Enum_Project_Alpha.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\Enum_Project_Alpha\bin\Debug\Enum_Project_Alpha.pdb
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\Enum_Project_Alpha\obj\Debug\Enum_Project_Alpha.csproj.AssemblyReference.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\Enum_Project_Alpha\obj\Debug\Enum_Project_Alpha.csproj.CoreCompileInputs.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\Enum_Project_Alpha\obj\Debug\Enum_Project_Alpha.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\Enum_Project_Alpha\obj\Debug\Enum_Project_Alpha.pdb
