@@ -16,12 +16,9 @@ namespace TweentyOne
         public void Deal(List<Card> Hand)
         {
             Hand.Add(Deck.Cards.First());
-            Console.WriteLine(Deck.Cards.First().ToString());
+            Console.WriteLine($">> {Deck.Cards.First().ToString()}");
             Deck.Cards.RemoveAt(0);
         }
-        public void Hit()
-        {
-
-        }
+        
     }
 }

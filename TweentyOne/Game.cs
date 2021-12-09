@@ -12,8 +12,12 @@ namespace TweentyOne
         // Variables
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         public string Title { get; set; }
-        public List<Player> Players { get; set; }
-        public Dealer Dealer { get; set; }
+
+        public List<Player> Players { get { return _players; } set { _players = value; } }
+        private List<Player> _players = new List<Player>();
+
+        public Dictionary<Player, int> Bets { get { return _bets; } set { _bets = value; } }
+        private Dictionary<Player, int> _bets = new Dictionary<Player, int>();
 
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

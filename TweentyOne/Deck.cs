@@ -8,8 +8,9 @@ namespace TweentyOne
 {
     public class Deck
     {
+        private List<Card> _cards = new List<Card>();
 
-        public List<Card> Cards { get; set; }
+        public List<Card> Cards { get { return _cards; } set { _cards = value; } }
 
 
         public Deck()

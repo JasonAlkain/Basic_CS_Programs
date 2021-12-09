@@ -12,6 +12,12 @@ namespace TweentyOne
         public Suit Suit { get; set; }
         public Face Face { get; set; }
 
+        public override string ToString()
+        {
+            return string.Format($"[ {Face} \t| {Suit} ]");
+        }
+
+
         public Card(Suit suit, Face face)
         {
             Suit = suit;
