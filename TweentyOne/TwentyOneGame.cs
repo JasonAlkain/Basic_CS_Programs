@@ -48,16 +48,27 @@ namespace TweentyOne
             Dealer.IsStay = false;
             Dealer.Deck = new Deck();
             Dealer.Deck.Shuffle();
-            WriteLine("Place your bets!");
-            Write(">>: ");
+            int playerBet = 0;
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // Get player bets
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             foreach (Player player in Players)
             {
-                int.TryParse(ReadLine(), out int playerBet);
-                bool CanBet = player.Bet(playerBet);
+                bool isValid = false;
+                while (!isValid)
+                {
+                    WriteLine("Place your bets!");
+                    Write(">>: ");
+                    isValid = int.TryParse(ReadLine(), out playerBet);
+                    if (!isValid)
+                    {
+                        WriteLine("Please enter digits and no decimals.");
+                        ReadKey();
+                    }
+                    Clear();
+                }
 
+                bool CanBet = player.Bet(playerBet);
                 if (!CanBet)
                     return;
 
@@ -147,6 +158,7 @@ namespace TweentyOne
                     {
                         Dealer.Deal(player.Hand);
                     }
+                    Clear();
 
                     // Check if player is busted
                     bool isBusted = TwentyOneRules.CheckForBust(player.Hand);
@@ -218,6 +230,7 @@ namespace TweentyOne
                 {
                     case true:
                         WriteLine($"{player.Name} has won {Bets[player]}!!");
+                        WriteLine($"Your new balance is: {player.Balance.ToString("C")}!!");
                         player.Balance += (Bets[player] * 2);
                         break;
                     case false:

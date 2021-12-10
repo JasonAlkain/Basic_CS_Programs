@@ -22,14 +22,31 @@ namespace TweentyOne
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         static void Main(string[] args)
         {
+
+
             Intro(out string playerName, out int bank, out string userIn);
             MainGameLoop(playerName, bank, userIn);
 
             // Best to put it here so I know where it is...
             ReadKey();
         }
-
+        /// <summary>
+        /// The starting message method
+        /// </summary>
+        /// <param name="playerName"></param>
+        /// <param name="bank"></param>
+        /// <param name="userIn"></param>
         public static void Intro(out string playerName, out int bank, out string userIn)
+        {
+            IntroName(out playerName);
+            IntroBank(out bank);
+            IntroReady(playerName, out userIn);
+        }
+        /// <summary>
+        /// Gets the players name
+        /// </summary>
+        /// <param name="playerName"></param>
+        public static void IntroName(out string playerName)
         {
 
             // entrance point
@@ -38,13 +55,36 @@ namespace TweentyOne
             Write("What is your name?\n>>: ");
             playerName = ReadLine();
             Clear();
+        }
+        /// <summary>
+        /// Gets how much the player starts with
+        /// </summary>
+        /// <param name="bank"></param>
+        public static void IntroBank(out int bank)
+        {
+            bool isValid = false;
+            bank = 0;
+            while (!isValid)
+            {
+                Write("And how much money did you bring?\n>>: ");
+                isValid = int.TryParse(ReadLine(), out bank);
+                if (!isValid)
+                {
+                    WriteLine("Please enter digits and no decimals.");
+                    ReadKey();
+                }
+                Clear();
 
-
-            Write("And how much money did you bring?\n>>: ");
-            int.TryParse(ReadLine(), out bank);
+            }
             Clear();
-
-
+        }
+        /// <summary>
+        /// Prompts the user if they are ready to play
+        /// </summary>
+        /// <param name="playerName"></param>
+        /// <param name="userIn"></param>
+        public static void IntroReady(string playerName, out string userIn)
+        {
             WriteLine($"Hello, {playerName}.");
             WriteLine("Would you like to join a game of 21 right now?");
             Write("[ Yes | No ]\n>>: ");
@@ -52,6 +92,8 @@ namespace TweentyOne
             Clear();
 
         }
+
+
 
         private static void MainGameLoop(string playerName, int bank, string userIn)
         {
