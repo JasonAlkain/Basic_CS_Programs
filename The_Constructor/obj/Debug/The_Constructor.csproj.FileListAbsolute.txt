@@ -1,0 +1,7 @@
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\The_Constructor\bin\Debug\The_Constructor.exe.config
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\The_Constructor\bin\Debug\The_Constructor.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\The_Constructor\bin\Debug\The_Constructor.pdb
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\The_Constructor\obj\Debug\The_Constructor.csproj.AssemblyReference.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\The_Constructor\obj\Debug\The_Constructor.csproj.CoreCompileInputs.cache
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\The_Constructor\obj\Debug\The_Constructor.exe
+E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\The_Constructor\obj\Debug\The_Constructor.pdb
