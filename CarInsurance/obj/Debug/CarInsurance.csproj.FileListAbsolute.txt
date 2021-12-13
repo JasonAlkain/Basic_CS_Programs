@@ -78,6 +78,5 @@ E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\Car
 E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\CarInsurance\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\CarInsurance\obj\Debug\CarInsurance.csproj.AssemblyReference.cache
 E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\CarInsurance\obj\Debug\CarInsurance.csproj.CoreCompileInputs.cache
-E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\CarInsurance\obj\Debug\CarInsurance.csproj.CopyComplete
 E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\CarInsurance\obj\Debug\CarInsurance.dll
 E:\Schools\The Tech Academy\the-tech-academy-repos\C-Sharp\Basic_CS_Programs\CarInsurance\obj\Debug\CarInsurance.pdb
