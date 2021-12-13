@@ -41,6 +41,8 @@ namespace NewsLetterApp.Controllers
             //        signUps.Add(signup);
             //    }
             //}
+
+
             var signUpVMs = new List<SignUpVM>();
 
             foreach (var signUp in signUps)
