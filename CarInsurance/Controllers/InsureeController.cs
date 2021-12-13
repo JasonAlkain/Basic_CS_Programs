@@ -50,6 +50,39 @@ namespace CarInsurance.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Base level for the quote
+                insuree.Quote = 50;
+
+                int age = DateTime.Now.Year - insuree.DateOfBirth.Year;
+
+                // Age Check
+                if (age < 18)
+                    insuree.Quote += 100;
+                else if (age > 19 && age < 25)
+                    insuree.Quote += 50;
+                else if (age > 25)
+                    insuree.Quote += 25;
+
+                // Car year check
+                if (insuree.CarYear < 2000 || insuree.CarYear > 2015)
+                    insuree.Quote += 25;
+
+                // Car make and model check
+                if (insuree.CarMake == "Porsche" && insuree.CarModel == "911 Carrera")
+                    insuree.Quote += 25;
+
+                // Speeding Tickets check
+                if (insuree.SpeedingTickets > 0)
+                    insuree.Quote += insuree.SpeedingTickets * 10;
+
+                // DUI Check
+                if (insuree.DUI)
+                    insuree.Quote += insuree.Quote * 0.25m;
+
+                // Full Coverage check
+                if (insuree.CoverageType)
+                    insuree.Quote += insuree.Quote * 0.5m;
+
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
                 return RedirectToAction("Index");
