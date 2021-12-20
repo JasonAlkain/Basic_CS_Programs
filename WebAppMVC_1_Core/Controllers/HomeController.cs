@@ -20,6 +20,10 @@ namespace WebAppMVC_1_Core.Controllers
 
         public IActionResult Index()
         {
+            DateTime localDate = DateTime.Now;
+
+            ViewBag.localTime = localDate.ToString();
+            
             return View();
         }
 
