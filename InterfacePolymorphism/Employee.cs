@@ -21,7 +21,7 @@ namespace InterfacePolymorphism
         // Should the employee choose to quit...
         public void Quit()
         {
-            Console.WriteLine("You can't quit, your fired.");
+            Console.WriteLine("You can't quit, you're fired.");
         }
     }
 }
